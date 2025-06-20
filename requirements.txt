@@ -1,0 +1,7 @@
+qtpy
+PyQt5
+h5io
+pyvistaqt
+imageio
+imageio-ffmpeg  
+pyvista
