@@ -86,5 +86,3 @@ Some potential ideas for future development:
 *   Allowing users to select a custom time range for the animation.
 *   Adding more advanced `mne.viz.Brain` parameters as options.
 *   Support for other template brains besides `fsaverage` (e.g. brain anatomy of a specific subject).
-
----
