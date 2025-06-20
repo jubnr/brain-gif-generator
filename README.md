@@ -8,17 +8,11 @@ This tool is designed to be run on your own computer, giving you full control ov
 
 ## ✨ Example Output
 
-Below is an example of a GIF created with this application using the included sample data (`assets/stc_avg.h5`). You can generate similar high-quality visuals for your own research, presentations, and publications.
+Below is an example of a GIF created with this application. You can generate similar high-quality visuals for your own research, presentations, and publications.
 
-![Demo Brain GIF](assets/brain_animation_split.gif)
+![Demo Brain GIF](media/brain_animation_split.gif)
 
 ---
-
-## 🧪 Test the App with Sample Data
-
-This repository includes a sample MNE source estimate file, **`assets/stc_avg.h5`** (need to unzip it), so you can test the application immediately after installation without needing your own data.
-
-Simply run the app, upload this file, and start experimenting with the controls!
 
 ## 🚀 Features
 
@@ -67,7 +61,7 @@ After running the last command, your default web browser should automatically op
 
 Once the app is running in your browser, the process is simple:
 
-1.  **Upload File**: In the sidebar, click "Browse files" and select an `.stc` or `.stc.h5` file. (You can use the `stc_avg.h5` file included in this repository to test the app immediately but before it will be needed to: `unzip stc_avg.zip`).
+1.  **Upload File**: In the sidebar, click "Browse files" and select an `.stc` or `.stc.h5` file.
 2.  **Customize**: Adjust the settings in the "Display Customization" and "Animation Settings" sections to your preference.
 3.  **Generate**: Click the primary "Generate GIF" button. The app will show progress indicators while it works.
 4.  **Preview & Download**: Once complete, your GIF will appear on the main page. Use the "Download GIF" button to save it.
@@ -77,14 +71,14 @@ The application follows a simple pipeline:
 
 1.  **Upload & Configure**: The user uploads an `.stc` file and selects visualization parameters from the sidebar.
 2.  **MNE Visualization**: MNE-Python's 3D plotting backend (`pyvista`) is used to create a `Brain` object on the `fsaverage` template. The MNE `fsaverage` dataset is automatically downloaded and cached on first run.
-![How to upload file](assets/1.png)
+![How to upload file](media/1.png)
 3.  **Frame Generation**: The app iterates through the specified time points of the source estimate, saving a high-resolution PNG screenshot for each frame into a temporary directory.
 4.  **GIF Assembly**: The `imageio` library compiles the individual PNG frames into a single, optimized, looping GIF, and will correctly handling transparency (work still in progress!).
 5.  **Display & Download**: The final GIF is presented to the user for preview and download.
-![Download](assets/2.png)
+![Download](media/2.png)
 
 
-## 🤝 Contributing & Future Ideas
+## 🤝 Contributing & Future Ideass
 
 Contributions are welcome! Feel free to open an issue and/or submit a pull request.
 
