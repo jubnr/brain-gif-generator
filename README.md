@@ -78,7 +78,7 @@ The application follows a simple pipeline:
 ![Download](media/2.png)
 
 
-## 🤝 Contributing & Future Ideass
+## 🤝 Contributing & Future Ideas
 
 Contributions are welcome! Feel free to open an issue and/or submit a pull request.
 
